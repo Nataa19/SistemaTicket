@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <h2> Register </h2>
+</head>
+<body>
+<style type="text/css">
+h2{text-align:center; color:white ; background-color:#B53CD6 ; font-size: 65 ;font-family:Verdana;}
+input{background-color:#B53CD6; color:white;  font-family:Verdana;} 
+</style>
+<form  style="text-align:center" action="form_registro.php" method="post"/>
+<p>Nombre: <input type="text" name="nombre_usuario" required/>
+<br>
+<p>Contraseña: <input type="password" name="contraseña" required/>
+<br>
+<p>Correo: <input type="varchar" name="email_usuario" required/>
+<br>
+<label for="rol_usuario" >Rol </label>
+<select name="rol_usuario" id="rol_usuario">
+  <option value="Administrador" >Administrador</option>
+  <option value="Usuario Estándar">Usuario Estándar</option>
+</select>
+<br>
+<p><input type="submit" value="Registrarse">
+<input type="reset" value="Limpiar"/>
+<p>
+<link>
+  <a style= "background-color:#B53CD6; color:white;  font-family:Verdana; text-decoration:none; bottom:center;"
+  class="fcc-btn"
+ href="index.html"
+  align:"center">
+  Volver
+  </a>  
+</body>
+</html>

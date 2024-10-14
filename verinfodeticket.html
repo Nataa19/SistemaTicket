@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Consulta de Tickets</title>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centra todo el contenido del cuerpo */
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        table {
+            width: 70%; /* Ajusta el ancho de la tabla */
+            margin: 20px auto; /* Centra la tabla horizontalmente */
+            border-collapse: collapse;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script>
+        function cargarTickets() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'form_consulta.php', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('tablaTickets').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body onload="cargarTickets()">
+    <h1>Consulta de Tickets</h1>
+    <div id="tablaTickets">
+        <!-- Aquí se cargará la tabla desde form_consulta_ticket.php -->
+    </div>
+
+    <link>
+  <a style= "background-color:#B53CD6; color:white;  font-family:Verdana; text-decoration:none; bottom.center;"
+  class="fcc-btn"
+  } href="dashboard.html"
+  align:"center">
+  Volver
+  </a>  
+</body>
+</html>

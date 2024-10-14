@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket</title>
+    <h2> Ingreso de Ticket </h2>
+</head>
+<body>
+<style type="text/css">
+h2 {
+    text-align:center; 
+    color:white ; 
+    background-color:#B53CD6; 
+    font-size: 65px; 
+    font-family:Verdana;
+}
+input {
+    background-color:#B53CD6; 
+    color:white;
+    font-family:Verdana; 
+} 
+</style>
+<form style="text-align:center" action="form_ticket.php" method="post">
+    <p>Describir ticket: <input type="text" name="descripcion_ticket" required/></p>
+    <p><label for="prioridad_ticket">Prioridad del ticket </label>
+    <select name="prioridad_ticket" id="prioridad_ticket">
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+    </select></p>
+    <p><input type="submit" value="Guardar"/></p>
+    <p>
+        <a style="background-color:#B53CD6; color:white; font-family:Verdana; text-decoration:none; text-align:center;" class="fcc-btn" href="dashboard.html">Volver</a>
+    </p>
+</form>
+</body>
+</html>
